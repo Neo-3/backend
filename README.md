@@ -25,7 +25,7 @@ Depois, tenha certeza que está dentro do diretório do repositório.
 $ cd <caminho/para/backend>
 ```
 
-Então, inicie o seu ambiente virtual com os seguintes comandos:
+Caso você queira ultilizar um abiente virtual, pode rodar os camandos abaixo:
 
 ```bash
 # Configura o ambiente virtual no diretório atual
@@ -50,7 +50,7 @@ Portanto é necessário conectar o python ao MongoDB, e para isso você precisa 
 ```bash
 # Ainda no diretório da aplicação execute:
 $ touch api/config.py
-
+ 
 # Depois disso pegue o url e execute o seguinte comando:
 $ echo MONGO_URI="Cole aqui a url do mongo" > api/config.py
 ```
@@ -58,3 +58,17 @@ $ echo MONGO_URI="Cole aqui a url do mongo" > api/config.py
 > **Nota**: Se você não sabe como conseguir o url de conexão do MongoDB da uma olhada [nesse site](https://docs.mongodb.com/guides/server/drivers/).
 
 Pronto! Agora o projeto já está configurado e pronto para uso. 
+
+### 💻 Rodando 
+Agora que o projeto ja está configurado e pronto para uso só precisa colocar para rodar.
+
+E para isso basta rodar o seguinte comando:
+
+```bash
+# No diretório da aplicação execute:
+$ python3 server.py     
+```
+
+> **Nota:** Se estiver usando um ambiente virtual, execute este comando dentro dele.
+
+
