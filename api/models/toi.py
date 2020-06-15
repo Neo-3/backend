@@ -6,4 +6,4 @@ class Toi(Document):
 
 
 class Teste(Document):
-    teste = StringField()
+    name = StringField(unique=True)
