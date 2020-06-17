@@ -20,6 +20,3 @@ def testPost():
         return jsonify({'data': teste.name})
     except Exception as error:
         return jsonify({'Error': str(error)})
-
-
-
