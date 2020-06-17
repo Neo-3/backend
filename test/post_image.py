@@ -1,8 +1,6 @@
-import base64
 import requests
 import json
 
-    
 url = 'http://localhost:5000/api/v1/classifier'
 myimg = ({'image': open("medidor.jpg", "rb")})
 
