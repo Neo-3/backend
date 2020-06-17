@@ -11,12 +11,11 @@ def index():
 @app.route("/api/v1.0/register/test", methods=["POST"])
 def testPost():
     body = request.get_json()
-    print(body.get("name"))
 
-    teste = Teste(name=body.get("name"))
+    teste = Teste(name=body.get("name"), some_value=body.get("someValue"))
 
     try:
         teste.save()
-        return jsonify({'data': teste.name})
+        return teste.to_json
     except Exception as error:
         return jsonify({'Error': str(error)})
