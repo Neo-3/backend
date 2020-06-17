@@ -25,7 +25,7 @@ Depois, tenha certeza que está dentro do diretório do repositório.
 $ cd <caminho/para/backend>
 ```
 
-Caso você queira ultilizar um abiente virtual, pode rodar os camandos abaixo:
+Caso você queira utilizar um ambiente virtual, pode rodar os camandos abaixo:
 
 ```bash
 # Configura o ambiente virtual no diretório atual
