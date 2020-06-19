@@ -16,6 +16,6 @@ def testPost():
 
     try:
         teste.save()
-        return teste.to_json
+        return teste.to_json()
     except Exception as error:
         return jsonify({'Error': str(error)})

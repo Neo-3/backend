@@ -3,7 +3,7 @@ from mongoengine import DateTimeField, StringField, ReferenceField, ListField, I
 
 
 class AnotherTest(EmbeddedDocument):
-    value = StringField()
+    name = StringField()
 
 
 class Teste(Document):
