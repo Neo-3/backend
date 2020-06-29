@@ -1,4 +1,4 @@
 # Need to import all controllers subfiles here 
 
-from .forms import *
+from .machine_learning_model import *
 from .classifier import *

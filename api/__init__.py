@@ -12,4 +12,4 @@ app.config["DEBUG"] = True  # DEBUG MODE
 app.config["MONGO_URI"] = MONGO_URI
 
 # Stabilish a connection with mongoDB
-connect(host=MONGO_URI) 
+connect(host=MONGO_URI, db='models') 

@@ -23,7 +23,7 @@ image.LOAD_TRUNCATED_IMAGES = True
 vgg16 = VGG16(weights='imagenet', include_top=False)
 
 
-@app.route("/api/v1/classifier", methods=["POST"])
+@app.route("/api/v1.0/classifier", methods=["POST"])
 def classifier():
     file = None
     file = request.files['image']
