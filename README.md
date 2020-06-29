@@ -29,7 +29,7 @@ Caso você queira utilizar um ambiente virtual, pode rodar os camandos abaixo:
 
 ```bash
 # Configura o ambiente virtual no diretório atual
-$ python3 -m venv ./ 
+$ python3 -m venv ./venv 
 
 # Inicia o ambiente virtual
 $ . venv/bin/activate
@@ -43,17 +43,10 @@ O que pode ser feito pelo seguinte comando:
 $ pip3 install -r requirements.txt 
 ```
 
-Para prover todo o sistema de armazenamento de dados esta API ultiliza um banco de dados, chamando [MongoDB](https://docs.mongodb.com/guides/server/install/) 💜.
+Para prover todo o sistema de armazenamento de dados esta API ultiliza um banco de dados, chamando [MongoDB](https://docs.mongodb.com/guides/server/install/) 💜, portanto é necessário conectar o python ao MongoDB. 
 
-Portanto é necessário conectar o python ao MongoDB, e para isso você precisa da url de conexão do MongoDB, e depois executar os seguintes comandos:
+E para isso você precisa substituir a variável "MONGO_URI" com a url da sua conexão.
 
-```bash
-# Ainda no diretório da aplicação execute:
-$ touch api/config.py
- 
-# Depois disso pegue o url e execute o seguinte comando:
-$ echo MONGO_URI="Cole aqui a url do mongo" > api/config.py
-```
 
 > **Nota**: Se você não sabe como conseguir o url de conexão do MongoDB da uma olhada [nesse site](https://docs.mongodb.com/guides/server/drivers/).
 
